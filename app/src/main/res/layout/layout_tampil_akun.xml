@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/loginCard"
+    app:cardCornerRadius="@dimen/loginCardRadius"
+    android:elevation="5dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="@dimen/loginViewsMargin"
+    android:layout_marginBottom="@dimen/loginViewsMargin"
+    android:background="@color/whiteCardColor">
+
+    <LinearLayout
+        style="@style/linearParent"
+        android:layout_gravity="center"
+        android:padding="@dimen/loginViewsMargin">
+
+        <TextView
+            style="@style/headerTextPrimary"
+            android:text="DATA MASTER AKUN"
+            android:layout_marginTop="@dimen/loginViewsMargin"/>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/parent"
+            android:id="@+id/username_text_input_layout"
+            android:layout_marginTop="@dimen/signup_text_margin_top"
+            app:counterEnabled="true"
+            app:counterMaxLength="10">
+            <EditText
+                android:id="@+id/edtUsername"
+                style="@style/modifiedEditText"
+                android:inputType="none"
+                android:maxLines="1"
+                android:ems="10"
+                android:editable="false"
+                android:maxLength="10"
+                android:hint="Username"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+            <EditText
+                android:id="@+id/edtNama"
+                style="@style/modifiedEditText"
+                android:inputType="textPersonName|textCapSentences"
+                android:maxLines="1"
+                android:hint="Nama Lengkap"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+            <EditText
+                android:id="@+id/edtEmail"
+                style="@style/modifiedEditText"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:hint="Email"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+            <EditText
+                android:id="@+id/edtAlamat"
+                style="@style/modifiedEditText"
+                android:inputType="textCapSentences|textMultiLine"
+                android:maxLines="2"
+                android:hint="Alamat"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top"
+            app:counterEnabled="true"
+            app:counterMaxLength="12">
+            <EditText
+                android:id="@+id/edtTelp"
+                style="@style/modifiedEditText"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:hint="Nomor Telepon"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+            <EditText
+                android:id="@+id/edtStatus"
+                style="@style/modifiedEditText"
+                android:inputType="textCapSentences"
+                android:maxLines="1"
+                android:hint="Status"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+            <EditText
+                android:id="@+id/edtKet"
+                style="@style/modifiedEditText"
+                android:hint="Keterangan"
+                android:maxLines="1"
+                android:inputType="text"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            style="@style/loginButton"
+            android:layout_gravity="center"
+            android:text="UPDATE AKUN"
+            android:id="@+id/buttonUpdate"/>
+        <Button
+            style="@style/loginButton"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="HAPUS AKUN"
+            android:id="@+id/buttonDelete"/>
+
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

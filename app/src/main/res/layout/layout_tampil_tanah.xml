@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/loginCard"
+    app:cardCornerRadius="@dimen/loginCardRadius"
+    android:elevation="5dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="@dimen/loginViewsMargin"
+    android:layout_marginBottom="@dimen/loginViewsMargin"
+    android:background="@color/whiteCardColor">
+
+    <LinearLayout
+        style="@style/linearParent"
+        android:layout_gravity="center"
+        android:padding="@dimen/loginViewsMargin">
+
+        <TextView
+            style="@style/headerTextPrimary"
+            android:text="DATA ADMINISTRASI TANAH"
+            android:layout_marginTop="@dimen/loginViewsMargin"/>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+            <EditText
+                android:id="@+id/editTextID"
+                style="@style/modifiedEditText"
+                android:inputType="none"
+                android:editable="false"
+                android:maxLines="1"
+                android:hint="ID Tanah"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+            <EditText
+                android:id="@+id/editTextNama"
+                style="@style/modifiedEditText"
+                android:inputType="text"
+                android:maxLines="1"
+                android:hint="Nama Lengkap"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+            <EditText
+                android:id="@+id/editTextAlamat"
+                style="@style/modifiedEditText"
+                android:inputType="text"
+                android:maxLines="1"
+                android:hint="Alamat"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+            <EditText
+                android:id="@+id/editTextPersil"
+                style="@style/modifiedEditText"
+                android:inputType="number"
+                android:maxLines="1"
+                android:hint="Persil"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+            <EditText
+                android:id="@+id/editTextJT"
+                style="@style/modifiedEditText"
+                android:inputType="text"
+                android:maxLines="1"
+                android:hint="Jenis Transaksi"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+            <EditText
+                android:id="@+id/editTextSJT"
+                style="@style/modifiedEditText"
+                android:inputType="text"
+                android:maxLines="1"
+                android:hint="Sub Jenis Transaksi"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+            <EditText
+                android:id="@+id/editTextLuas"
+                style="@style/modifiedEditText"
+                android:inputType="number"
+                android:maxLines="1"
+                android:hint="Luas Tanah (meter)"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+            <EditText
+                android:id="@+id/editTextKelas"
+                style="@style/modifiedEditText"
+                android:inputType="number"
+                android:maxLines="1"
+                android:hint="Kelas"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/in_date1"
+                style="@style/modifiedEditText"
+                android:hint="Tangal Registrasi"
+                android:editable="false"
+                android:maxLines="1"
+                android:inputType="none"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+            <EditText
+                android:id="@+id/editTextKet"
+                style="@style/modifiedEditText"
+                android:hint="Keterangan"
+                android:maxLines="1"
+                android:inputType="text"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            style="@style/loginButton"
+            android:layout_gravity="center"
+            android:text="UPDATE TANAH"
+            android:layout_marginVertical="10dp"
+            android:id="@+id/buttonUpdate"/>
+
+        <TextView
+            style="@style/headerTextPrimary"
+            android:text="FORM TRANSAKSI TANAH"
+            android:layout_marginTop="@dimen/loginViewsMargin"/>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+            <EditText
+                android:id="@+id/edtBuku"
+                style="@style/modifiedEditText"
+                android:inputType="text"
+                android:maxLines="1"
+                android:hint="Buku Fisik"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+            <EditText
+                android:id="@+id/edtKohir"
+                style="@style/modifiedEditText"
+                android:inputType="number"
+                android:maxLines="1"
+                android:hint="Kohir"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+            <EditText
+                android:id="@+id/edtNama"
+                style="@style/modifiedEditText"
+                android:inputType="text"
+                android:maxLines="1"
+                android:hint="Nama Lengkap"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+            <EditText
+                android:id="@+id/edtJT"
+                style="@style/modifiedEditText"
+                android:inputType="text"
+                android:maxLines="1"
+                android:hint="Jenis Transsaksi"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+            <EditText
+                android:id="@+id/edtSJT"
+                style="@style/modifiedEditText"
+                android:inputType="text"
+                android:maxLines="1"
+                android:hint="Sub Jenis Transaksi"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+            <EditText
+                android:id="@+id/edtNotaris"
+                style="@style/modifiedEditText"
+                android:inputType="text"
+                android:maxLines="1"
+                android:hint="Nama Notaris"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+            <EditText
+                android:id="@+id/edtNomor"
+                style="@style/modifiedEditText"
+                android:inputType="text"
+                android:maxLines="1"
+                android:hint="Nomor"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+            <EditText
+                android:id="@+id/edtLuas"
+                style="@style/modifiedEditText"
+                android:inputType="number"
+                android:maxLines="1"
+                android:hint="Luas Tanah (meter)"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/in_date"
+                style="@style/modifiedEditText"
+                android:hint="Tangal Registrasi"
+                android:editable="false"
+                android:maxLines="1"
+                android:inputType="none" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pilih Tanggal"
+                android:id="@+id/btn_date"
+                android:layout_alignBottom="@+id/in_date"
+                android:layout_toRightOf="@+id/in_date"
+                android:layout_toEndOf="@+id/in_date" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/modifiedEditText"
+                android:hint="Berkas Pendukung" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pilih Berkas"
+                android:id="@+id/btn_choose"
+                android:layout_alignBottom="@+id/in_date"
+                android:layout_toRightOf="@+id/in_date"
+                android:layout_toEndOf="@+id/in_date" />
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:id="@+id/imageViewDoc"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+            <EditText
+                android:id="@+id/edtKet"
+                style="@style/modifiedEditText"
+                android:inputType="number"
+                android:maxLines="1"
+                android:hint="Keterangan"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            style="@style/loginButton"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="TRANSAKSI TANAH"
+            android:id="@+id/buttonAdd"/>
+
+        <TextView
+            style="@style/headerTextPrimary"
+            android:text="Riwayat Tanah"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="@dimen/loginViewsMargin"/>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:id="@+id/listView"
+            />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

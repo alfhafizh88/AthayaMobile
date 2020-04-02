@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kodingindonesia.mycrud">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".app.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Login"></activity>
+        <activity android:name=".datamaster.TampilAkun" />
+        <activity android:name=".datamaster.TampilSemuaAkun" />
+        <activity android:name=".datamaster.MasterAkun" />
+        <activity android:name=".datamaster.TampilJenis" />
+        <activity android:name=".datamaster.TampilSemuaJenis" />
+        <activity android:name=".datamaster.MasterJenis" />
+        <activity android:name=".datamaster.TampilTanah" />
+        <activity android:name=".datamaster.TampilSemuaTanah" />
+        <activity android:name=".Pencarian" />
+        <activity android:name=".datamaster.Administrasi" />
+        <activity android:name=".datamaster.TampilLurah" />
+        <activity android:name=".datamaster.TampilSemuaLurah" />
+        <activity android:name=".datamaster.MasterLurah" />
+        <activity android:name=".datamaster.MasterJabatan" />
+        <activity android:name=".datamaster.TampilSemuaJbt" />
+        <activity android:name=".datamaster.TampilJabatan" />
+        <activity android:name=".datamaster.TampilKelas" />
+        <activity android:name=".datamaster.TampilSemuaKelas" />
+        <activity android:name=".datamaster.MasterKelas" />
+        <activity android:name=".datamaster.TampilBuku" />
+        <activity android:name=".datamaster.TampilSemuaBuku" />
+        <activity android:name=".Profil" />
+        <activity android:name=".Laporan" />
+        <activity android:name=".datamaster.DataMaster" />
+        <activity android:name=".datamaster.MasterBuku" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Splashscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Dashboard" />
+        <activity android:name=".datamaster.TampilSemuaPgw" />
+        <activity android:name=".ListView" />
+        <activity android:name=".datamaster.TampilPegawai" />
+    </application>
+
+</manifest>

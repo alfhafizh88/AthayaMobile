@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Athaya</string>
+    <string name="register">REGISTER</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+    <string name="signup_login_hint">Already have an account? Sign In</string>
+    <string name="login_signup_hint">Don\'t have an account? Sign Up</string>
+    <string name="status_prompt">Choose a country</string>
+    <string name="search">Search</string>
+    <string name="username">Masukkan Username Anda!</string>
+    <string name="type_name">Type Name</string>
+
+
+    <string-array name="status_arrays">
+        <item>Aktif</item>
+        <item>Tidak Aktif</item>
+    </string-array>
+</resources>
